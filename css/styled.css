@@ -1,6 +1,93 @@
 :root {
-    --primary-color: #B5179E;
-    --secondary-color: #F72585;
-    --white: #ffffff;
-    --black: #000000;
+  --primary-color: #b5179e;
+  --secondary-color: #f72585;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* ========================= */
+/* ========================= */
+/*        Typography         */
+/* ========================= */
+/* ========================= */
+
+@font-face {
+  font-family: "montserrat";
+  src: url("fonts/montserrat/montserrat-bold-webfont.woff2") format("woff2"),
+    url("fonts/montserrat/montserrat-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("fonts/montserrat/montserrat-regular-webfont.woff2") format("woff2"),
+    url("fonts/montserrat/montserrat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("fonts/montserrat/montserrat-medium-webfont.woff2") format("woff2"),
+    url("fonts/montserrat/montserrat-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("fonts/montserrat/montserrat-semibold-webfont.woff2") format("woff2"),
+    url("fonts/montserrat/montserrat-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* ========================= */
+/* ========================= */
+/*       General Styles      */
+/* ========================= */
+/* ========================= */
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: montserrat;
+  line-height: 1.5;
+  font-size: 1.4rem;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 7rem;
+        margin-bottom: 3.5rem;
+    }
+    
+    h2 {
+        font-size: 5.5rem;
+        margin-bottom: 6rem;
+    }
+    
 }
