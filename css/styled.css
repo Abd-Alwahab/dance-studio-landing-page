@@ -3,6 +3,8 @@
   --secondary-color: #f72585;
   --white: #ffffff;
   --black: #000000;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  --body-background: #f7f7f7;
 }
 
 /* ========================= */
@@ -57,6 +59,7 @@ body {
   font-family: montserrat;
   line-height: 1.5;
   font-size: 1.4rem;
+  background-color: var(--body-background);
 }
 
 h1 {
@@ -100,18 +103,74 @@ a {
 
 .link-underline {
   border-bottom: 2px solid var(--primary-color);
-  color:var(--primary-color);
+  color: var(--primary-color);
   text-transform: uppercase;
   padding-bottom: 3px;
   font-weight: 500;
   font-size: 1.4rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .link-underline {
+    font-size: 2.4rem;
+  }
+}
+
+
+
+
+/* ========================= */
+/* ========================= */
+/*           Buttons         */
+/* ========================= */
+/* ========================= */
+
+.btn {
+  font-weight: 600;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 27px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  transition: all .4s;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.btn-normal {
+  padding: 14px 40px;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  padding: 14px;
+}
+
+
+.btn-transparent {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+.btn-white {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+.btn:hover {
+  box-shadow: var(--box-shadow);
+}
+
 
 
 @media screen and (min-width: 1024px) {
-  
-  .link-underline {
-    font-size: 2.4rem;
+  .btn-normal {
+    font-size: 2.6rem;
   }
 }
