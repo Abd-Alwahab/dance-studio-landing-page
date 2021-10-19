@@ -3,7 +3,7 @@
   --secondary-color: #f72585;
   --white: #ffffff;
   --black: #000000;
-  --box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   --body-background: #f7f7f7;
 }
 
@@ -116,9 +116,6 @@ a {
   }
 }
 
-
-
-
 /* ========================= */
 /* ========================= */
 /*           Buttons         */
@@ -133,7 +130,7 @@ a {
   cursor: pointer;
   letter-spacing: 1px;
   margin-bottom: 1rem;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .btn-primary {
@@ -151,7 +148,6 @@ a {
   padding: 14px;
 }
 
-
 .btn-transparent {
   background-color: transparent;
   color: var(--white);
@@ -167,14 +163,11 @@ a {
   box-shadow: var(--box-shadow);
 }
 
-
-
 @media screen and (min-width: 1024px) {
   .btn-normal {
     font-size: 2.6rem;
   }
 }
-
 
 /* ========================= */
 /* ========================= */
@@ -193,12 +186,36 @@ a {
 }
 
 .list-block .list__item {
- margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
-
 
 @media screen and (min-width: 1024px) {
   .list-block .list__item {
-   margin-bottom: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+}
+
+/* ========================= */
+/* ========================= */
+/*           Inputs         */
+/* ========================= */
+/* ========================= */
+
+.input {
+  padding: 15px 20px;
+  border: 1px solid var(--black);
+  outline: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 2.4rem;
+    border: 2px solid var(--black);
   }
 }
